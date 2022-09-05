@@ -101,6 +101,12 @@ nav ul li a:hover {
   color: #F15953;
 }
 
+h1{
+  height: 55vh;
+  text-align: center;
+  font-weight: bold;
+}
+
 .btn-wsp {
   position: fixed;
   width: 45px;
