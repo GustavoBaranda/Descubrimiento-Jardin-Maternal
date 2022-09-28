@@ -2,7 +2,7 @@ const slider2 = document.querySelector('#slider2');
 let sliderSection2 = document.querySelectorAll('.slider__section2');
 let sliderSectionLast2 = sliderSection2[sliderSection2.length - 1];
 
-const letf2 = document.querySelector('#letf2');
+const left2 = document.querySelector('#left2');
 const rigth2 = document.querySelector('#rigth2');
 
 slider2.insertAdjacentElement('afterbegin', sliderSectionLast2);
@@ -18,10 +18,10 @@ function next2() {
     }, 500);
 }
 
-function prev() {
+function prev2() {
     let sliderSection2 = document.querySelectorAll('.slider__section2');
     let sliderSectionLast2 = sliderSection2[sliderSection2.length - 1];
-    slider2.style.marginLeft = '-0%';
+    slider2.style.marginLeft = '0%';
     slider2.style.transition = 'all 0.5s ease';
     setTimeout(function(){
         slider2.style.transition = 'none';
@@ -39,5 +39,5 @@ left2.addEventListener('click', function(){
 });
 
 setInterval(function(){
-    next();
+    next2();
 }, 5000);
