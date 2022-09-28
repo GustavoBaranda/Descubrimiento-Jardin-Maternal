@@ -71,7 +71,7 @@ nav ul li a:hover {
 .actives {
   border-radius: 15px;
   background: #a7eae4;
-  transition: .5s;
+  transition: all 0.5s ease;
   font-weight: bold;
 }
 
