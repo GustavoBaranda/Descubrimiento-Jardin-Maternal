@@ -1,24 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   text-decoration: none !important;
-  list-style-type: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: Heebo;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: BlackboardRestaurant ;
+  src: url(../font/BlackboardRestaurant.otf);
 }
 
 body {
   width: 100%;
   min-height: 100vh;
 }
-
+/*NAVBAR*/
 nav {
+  position: fixed;
   background: #fff;
   height: 130px;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
+  z-index: 100;
+  top: 10;
 }
 
 nav ul {
@@ -45,7 +53,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #fff;
+  border-radius: 15px;
+  color: #F15953;
   transition: .5s;
 }
 
@@ -60,8 +69,10 @@ nav ul li a:hover {
 }
 
 .actives {
+  border-radius: 15px;
   background: #a7eae4;
   transition: .5s;
+  font-weight: bold;
 }
 
 .checkbtn {
@@ -78,35 +89,7 @@ nav ul li a:hover {
 #check {
   display: none;
 }
-
-.main{
-  width: 90%;
-  z-index: -1;
-  margin: 0 auto;
-  margin-top: 5%;
-}
-
-.textIndex{
-  margin: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.textFrase{
-  text-align: center;
-  font-family: Blackboard Restaurant;
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 46px;
-  color: #F15953;
-}
-
-h1{
-  height: 55vh;
-  text-align: center;
-  font-weight: bold;
-}
-
+/*BOTON WHATSAPPS*/
 .btn-wsp {
   position: fixed;
   width: 45px;
@@ -130,13 +113,104 @@ h1{
 header a .fab {
   font-size: 35px;
 }
+/*iNDEX*/
+main{
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+  z-index: -1;
+  margin: 0 auto;
+}
 
+.index{
+  padding-top: 150px;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 100px;
+}
+
+.container-slider{
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #000;
+  position: relative;   
+  border-radius: 20px;         
+}
+
+.slider{
+  display: flex;
+  width: 300%;
+  max-height: 610px;
+}
+
+.slider__section{
+  width: 100%;
+}
+
+.slider__img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  width: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+  background-color: #AEDFDE;
+  opacity: 0.8;
+}
+
+.slider__btn:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  color: #fff;
+  opacity: 1;
+}
+
+.letf{
+  left: 1%;
+  top: calc(50% - 40px)
+}
+
+.rigth{
+  right: 1%;
+  top: calc(50% - 40px);
+}
+
+.textIndex{
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textFrase{
+  text-align: center;
+  margin: 20px;
+  padding-right: 20%;
+  font-family: BlackboardRestaurant;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 46px;
+  color: #F15953;
+}
+
+/*FOOTER*/
 .footerContainer {
   width: 100%;
   padding: 10px 0;
   background-color:  #D3D5DB;
   text-align: center;
-   color: #fff;
+  color: #000;
 }
 
 .footer{
@@ -144,24 +218,28 @@ header a .fab {
   justify-content: center;
 }
 
+.logoFooterContainer{
+  text-align: center;
+}
+
 .logo-footer{
-  width: 400px
+  max-width: 400px;
 }
 
 .footerNavegacion {
-  display:flex;
-  justify-content: space-around;
+  display:block;
 }
 
 .footerNavegacion ul{
-margin: 0;
-padding-top: 20px;
-text-align: left;
+  list-style-type: none;
+  margin: 0;
+ 
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .footerNavegacion ul li {
   width: 100%;
-  display: block;
   padding: 0 15px;
 }
 
@@ -169,38 +247,84 @@ text-align: left;
   margin-top: 20px;
   padding: 0;
   list-style: none;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  text-align: center;
-  color: #fff;
-  opacity: 0.8;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.9;
 }
 
 .footerNavegacion ul li a:hover {
+  color: #F15953;
   opacity: 1;
-  font-weight: bold;
 }
 
-.footerNavegacion ul li p {
-  font-size: 1.2rem;
-  color: #fff;
+.nuestrosCanales{
+  margin-left: 30px;
+  opacity: 0.9;
+}
+
+.nuestrosCanalesContacto{
+  opacity: 0.9;
+  padding-bottom: 20px;
+}
+
+.nuestrosCanales h2,
+.nuestrosCanalesContacto h2{
+  text-align: center;
   margin: 0;
+  padding: 15PX 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.redes{
+  list-style-type: none;
+  display: flex; 
+  justify-content: center; 
+  gap: 10px;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .img-canales{
-  width: 25px;
+  width: 30px;
+}
+
+.img-canales:hover{
+  width: 35px;
+}
+
+.footer-copyright{
+  margin: 0;
+  padding: 0;
 }
 
 .copyright {
-  margin-top: 1rem;
+  margin: 5px;
   text-align: center;
-  font-size: 13px;
+  font-size: 10px;
   color: #aaa;
   text-align: center;
 }
 
 .gracias {
   height: 60vh;
+}
+
+@media (max-width: 1590px) {
+  .textFrase{
+    padding-right: 12%;
+  }
+  
+}
+
+@media (max-width: 1250px ) {
+  .textFrase{
+    padding-right: 4%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -210,17 +334,14 @@ text-align: left;
   nav ul li a {
     font-size: 16px;
   }
+
+  .index{
+    margin-top: 50px;
+  }
+
   .footerNavegacion ul li a {
     font-size: 1.2rem;
   }
-  .textFrase{
-  text-align: center;
-  font-family: Blackboard Restaurant;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 46px;
-  color: #F15953;
-}
 }
 
 @media (max-width: 850px) {
@@ -250,16 +371,25 @@ text-align: left;
   }
   nav ul li a:hover {
     background: none;
-    color: #fff;
+    color: #F15953;
   }
  
-  .active {
+  .actives {
     background: none;
     color: #fff;
   }
   #check:checked ~ ul {
     left: 0;
   }
+
+  .index{
+    margin-top: 30px;
+  }
+
+  .textFrase{
+    font-size: 30px;
+  }
+
   .footer{
     display: block;
     padding: 0 15px;
@@ -271,5 +401,16 @@ text-align: left;
   .footerNavegacion ul{
    text-align: center;   
   }
+}
 
+@media (max-width: 650px) {
+   .textFrase{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-footer{
+    width: 100%;
+  }
 }
