@@ -1,0 +1,190 @@
+/*Salas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: Heebo;
+}
+
+@font-face {
+  font-family: BlackboardRestaurant ;
+  src: url(../font/BlackboardRestaurant.otf);
+}
+
+.salas{
+    position: relative;
+    width: 100%;
+    color: #F15953; 
+    padding-top: 80px;
+    display: block;  
+    margin: 0 auto;    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .salasContenedor{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    color: #F15953; 
+  }
+  
+  .salitasTitulo{
+    font-family: BlackboardRestaurant;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    color: #F15953;
+    margin: 50px 0 60px;
+  }
+  
+  .salas h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 53px;
+  }
+  
+  .salas p{
+    object-fit:contain;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #000;
+  
+  }
+  
+  .containerCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0;
+    padding: 150px 0;
+  }
+  
+  .card{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin-bottom: 50px;
+  }
+  
+  .cardFront h3{
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 320px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .5s;
+    text-align: center;
+  }
+  
+  .front{
+    transform: perspective(300px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    background:  #7BBA44;
+  }
+  
+  .frontRojo{
+    transform: perspective(300px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    background: #EB5A54;
+  }
+  
+  .front img{
+    margin-top: 45px;
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+  }
+  
+  .frontRojo img{
+    margin-top: 45px;
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+  }
+  
+  .back{
+    transform: perspective(300px) rotateY(180deg);
+    background:  #7BBA44;
+    padding: 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 10px #000;
+  }
+  
+  .backRojo{
+    transform: perspective(300px) rotateY(180deg);
+    background: #EB5A54;
+    padding: 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 10px #000;
+  }
+  
+  .back h3, .backRojo h3{
+    font-size: 24px;
+    line-height: 15px;
+    vertical-align: top;
+  }
+  .back h4, .backRojo h4{
+    text-align: center;
+    font-size: 20px;
+    line-height: 12px;
+  }
+  
+  .back p, .backRojo p{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 20px 15px 0;
+    line-height: 15px;
+  }
+  
+  .card:hover .front, .card:hover .frontRojo {
+    transform: perspective(350px) rotateY(180deg);
+  }
+  
+  .card:hover .back, .card:hover .backRojo{
+    transform: perspective(350px) rotateY(360deg);
+    width: 350px;
+    height: 350px;
+    z-index: 30;
+    padding: 0 15px;
+    margin: 0;
+    left: -26px;
+  }
+  
+  .card:hover .cardFront h3{
+    margin-top: 370px;
+    transition: .5s;
+  }
+  
+  .card:hover .cardFront h3{
+    margin-top: 370px;
+    transition: .5s ease-in;
+  }
