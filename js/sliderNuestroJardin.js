@@ -14,7 +14,7 @@ function next2() {
     setTimeout(function(){
         slider2.style.transition = 'none';
         slider2.insertAdjacentElement('beforeend', sliderSectionFirt2);
-        slider.style.marginLeft = '-100%';
+        slider2.style.marginLeft = '-100%';
     }, 500);
 }
 
