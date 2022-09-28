@@ -1,0 +1,347 @@
+/*Contacto*/
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: Heebo;
+}
+
+@font-face {
+  font-family: BlackboardRestaurant ;
+  src: url(../font/BlackboardRestaurant.otf);
+}
+
+.contacto{
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    justify-content: center;
+   }
+  
+  .contactoContainer{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    margin: 0 5%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+  
+   .formulario {
+    margin: 10% 0;
+    max-width: 420px;
+    max-height: 540px;
+    background: #AEDFDE;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
+  }
+  
+  .colors {
+    color: #000;
+    font-size: 32px;
+    font-family: Heebo;
+    font-weight: bold;
+    line-height: 47px;
+  }
+  
+  .form-control {
+    background: #f3f3f3;
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+    border-radius: 15px;
+    border: 1px solid  #F15953;
+  }
+  
+  .form-control:focus {
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .form-control::placeholder {
+    color: #000;
+  }
+  
+  .ingresar {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700 !important;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
+    transition: 0.5s ease-in;
+  }
+  
+  .ingresar:hover {
+    color: #aedfde;
+  }
+  
+  .buttons {
+    width: 100%;
+    background: #F15953;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .comentario {
+    max-width: 100%;
+    max-height: 100px;
+    border: 1px solid #F15953;
+    margin-bottom: 15px;
+    padding: 2px 10px;
+    background: #f3f3f3;
+    border-radius: 15px;
+  }
+  
+  .contactoBebe{
+    position: relative;
+  }
+  
+  .bebeImgContacto{
+    position: absolute;
+    top: 300px;
+    left: -195px;
+  }
+  
+  .bebeImgContacto img{
+    width: 380px;
+  }
+  
+  .datosContacto{
+    margin: 10% 0;
+    max-width: 420px;
+    max-height: 540px;
+    background: #AEDFDE;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
+  }
+  
+  .datosContacto h1{
+    text-align: center;
+  }
+  
+  .datosContacto div p{
+    margin: 0;
+  }
+  
+  .mapsGoogle {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contactarte{
+    margin-right: 0px !important;
+  }
+  
+  .contactanos{
+    margin-left: 0px !important;
+  }
+  
+ .preguntasImgInicio{
+    display: none;
+ }
+
+  .preguntasFrecuentes{
+    background: #7BBA44;
+    display: flex;
+  }
+  
+  .preguntasFrecuentes h1{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;;
+    font-family: BlackboardRestaurant;
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  .preguntas{
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 90%;
+    max-height: 800px; 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .scrollPreguntas{
+    max-height: 760px;
+  }
+  
+  .listasPreguntas{
+    list-style-type:circle;
+    max-height: 760px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .listasPreguntas li{
+    font-family: BlackboardRestaurant;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 35px;
+    padding: 15px 0;
+  }
+  
+  .listasPreguntas p{
+    font-family: Heebo;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  
+  .preguntasImg{
+    position: relative;
+  }
+  
+  .preguntasImg img{
+    max-height: 760px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1720px) {
+ 
+  
+    
+  }
+  
+  @media (max-width: 1590px) {
+   
+    .bebeImgContacto{
+      position: absolute;
+      top: 320px;
+      left: -165px;
+    }
+  
+    .bebeImgContacto img{
+      width: 280px;
+    }
+    
+  }
+  
+  @media (max-width: 1250px ) {
+    .contactoContainer{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 500px;
+    }
+        
+    .formulario {
+      margin: 5% 0;
+      max-width: 420px;
+      max-height: 540px;
+      background: #AEDFDE;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
+    }
+  
+    
+   .datosContacto{
+    margin: 10% 0;
+    max-width: 420px;
+    max-height: 540px;
+    background: #AEDFDE;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
+  }
+  
+    .bebeImgContacto{
+      position: relative;
+      top: 100px;
+      left: 80px;
+    }
+  
+    .contactarte{
+      margin: 0 auto!important; 
+      margin: 0;
+      padding: 0; 
+      max-width: 420px;
+      margin-top: 50px;
+      max-height: 540px;
+    }
+  
+    .contactanos{
+      margin: 0 auto!important;   
+      margin: 0;
+      padding: 0; 
+      max-width: 420px;
+      margin-bottom: 50px;
+      max-height: 540px;
+    }
+  
+  }
+    
+  
+  @media (max-width: 1024px) {
+     
+    .preguntas{
+      padding: 30px 0;    
+      width: 90%;
+      height: 100%; 
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+      margin-bottom: 50px;
+    }
+  
+    .preguntasImg img{
+      padding-top: 244px;
+      width: 200px;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  }
+    
+  @media (max-width: 650px) {
+    .contactoContainer{
+        padding: 0;
+    }
+ 
+  
+    .preguntas{
+      grid-template-columns: 1fr;
+      max-height:  100%;
+    }
+  
+    .preguntasImgInicio{
+        display: block;
+    } 
+    .preguntasImgInicio img{
+      padding-top: 30px;
+      width: 200px;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;  
+    }
+
+    .preguntasImg {
+      display: none
+    }
+
+    .preguntasImg img{
+      position: relative;
+      padding-top: 0;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    
+  }
+  
