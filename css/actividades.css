@@ -1,0 +1,96 @@
+/*Actividades*/
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: Heebo;
+}
+
+@font-face {
+  font-family: BlackboardRestaurant ;
+  src: url(../font/BlackboardRestaurant.otf);
+}
+
+.actividades{
+    width: 95%;
+    padding-top: 150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  
+  .actividades div img{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .actividad1{
+    display: flex;
+    margin: 0 auto;
+    max-width: 660px;
+    max-height: 780px;
+    margin-bottom: 100px;
+  }
+  
+  .actividad2{
+    display: flex;
+    margin: 0 auto;
+    max-width: 660px;
+    max-height: 780px;
+    margin-bottom: 100px;
+  }
+  
+  .actividad2 p{
+    margin-top: 100px;
+    font-family: BlackboardRestaurant;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    padding: 0 20px;
+  }
+  
+  .actividad2 img{
+    display: block;
+    margin: 0 auto; 
+    margin-top: 150px; 
+    max-width: 600px;
+    max-height: 200px;
+  }
+
+ @media (max-width: 850px) {
+    .actividades{
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;   
+      margin: 0 auto;
+    }
+  
+    .actividades div img{
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .actividad2 p {
+      margin: 0;
+      padding: 20px 0;
+    }
+  }
+  
+  @media (max-width: 650px) {
+  
+  }
+  
+  @media (max-width: 420px) {
+    
+    }
+  
+  
+  
