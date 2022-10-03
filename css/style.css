@@ -79,7 +79,7 @@ body {
 .hamburger{
   display: none;
   cursor: pointer;
-  padding: 0 50px;
+  padding: 0 8%;
 }
 
 .bar{
@@ -334,7 +334,7 @@ main{
 
 @media (max-width: 1250px ) {
   .navBranding {
-    padding-left: 100px;
+    padding-left: 8%;
   }
  
   .textFrase{

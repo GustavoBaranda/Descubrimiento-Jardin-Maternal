@@ -11,12 +11,16 @@
 }
 
 @font-face {
+  font-display: auto;
   font-family: BlackboardRestaurant ;
-  src: url(../font/BlackboardRestaurant.otf);
+  src: local ('BlackboardRestaurant'),
+   url(../font/BlackboardRestaurant.otf);
+  font-weight: bold;
+  font-style: normal;
 }
 
 .nuestroJardinSection{
-    padding-top: 250px;
+    padding-top: 160px;
     width: 100%;
     bottom: 150px;
     margin: 55px 0 55px;
@@ -298,6 +302,10 @@
       justify-content: column;
       margin: 0;
     }
+
+    .nuestroJardinSection{
+      padding-top: 260px;
+    }
     
     .nuestroJardinTexto{
       margin: 0 auto;
@@ -421,6 +429,10 @@
   }
   
   @media (max-width: 440px){
+    .nuestroJardinSection{
+      padding-top: 300px;
+    }
+    
     .nuestroJardinTexto{
       margin: 0 2%;
       max-width: 420px;
@@ -482,6 +494,10 @@
 
   
   @media (max-width: 400px) {
+    .nuestroJardinSection{
+      padding-top: 160px;
+    }
+    
     .bolitasColores img{
      display: none;
     }
