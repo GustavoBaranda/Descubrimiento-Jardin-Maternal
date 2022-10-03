@@ -20,21 +20,22 @@
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0&appId=284410074982860&autoLogAppEvents=1" nonce="bjXzbDyI"></script>
     <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>  
-            </label>
-            <a href="#index" class="enlace">
+        <nav class="navBar">
+            <a href="#index" class="navBranding">
                 <img src="./img/logo.svg" href="../index.html" alt="logo" class="logo"> 
             </a>
-            <ul>
-                <li><a class="actives" href="#index">Inicio</a></li>
-                <li><a href="#nuestroJardin">Nuestro Jardín</a></li>
-                <li><a href="#salas">Salas</a></li>
-                <li><a href="#actividades">Actividades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="navMenu">
+                <li class="navItem"><a class="navLink actives" href="#index">Inicio</a></li>
+                <li class="navItem"><a class="navLink" href="#nuestroJardin">Nuestro Jardín</a></li>
+                <li class="navItem"><a class="navLink" href="#salas">Salas</a></li>
+                <li class="navItem"><a class="navLink" href="#actividades">Actividades</a></li>
+                <li class="navItem"><a class="navLink" href="#contacto">Contacto</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <a href="https://wa.me/5491138880837" class="btn-wsp" target="blank">
             <i class="fab fa-whatsapp"></i>
@@ -495,5 +496,6 @@
     <script src="./js/sliderInicio.js"></script>
     <script src="./js/sliderNuestroJardin.js"></script>
     <script defer src="./js/navBarScroll.js"></script>
+    <script src="./js/navBar.js"></script>
 </body>
 </html>

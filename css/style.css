@@ -19,32 +19,16 @@ body {
   min-height: 100vh;
 }
 /*NAVBAR*/
-nav {
-  position: fixed;
-  background: #fff;
-  height: 130px;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 100;
-  top: 10;
-}
 
-nav ul {
-  float: right;
-  margin-right: 20px;
-  height: 120px;
-  margin: 0;
-  padding: 0 5% 0;
-}
-
-nav ul li {
+.navItem{
+  list-style: none;
   padding-top: 15px;
   display: inline-block;
   line-height: 100px;
   margin: 0 5px;
 }
 
-nav ul li a {
+.navLink{
   color: #000;
   font-size: 1.2rem;
   font-weight: bold;
@@ -52,20 +36,60 @@ nav ul li a {
   border-radius: 3px;
 }
 
-nav ul li a:hover {
-  border-radius: 15px;
-  color: #F15953;
-  transition: .5s;
+.navBar {
+  min-height: 100px;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 100vw;
+  z-index: 100;
 }
 
-.enlace {
-  position: absolute;
-  padding: 20px 50px;
+.navMenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 0 100px 0 0;
+}
+
+.navBranding{
+  padding: 20px 0 20px 100px;
 }
 
 .logo {
   height: 100px;
   cursor: pointer;
+}
+
+
+.navLink {
+  transition: 0.7s ease; 
+}
+
+.navLink:hover {
+  border-radius: 15px;
+  color: #F15953;
+  transition: .5s;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+  padding: 0 50px;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
 }
 
 .actives {
@@ -75,20 +99,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.checkbtn {
-  padding-top: 15px;
-  color: #000;
-  cursor: pointer;
-  font-size: 30px;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  display: none;
-}
 
-#check {
-  display: none;
-}
 /*BOTON WHATSAPPS*/
 .btn-wsp {
   position: fixed;
@@ -322,18 +333,64 @@ main{
 }
 
 @media (max-width: 1250px ) {
+  .navBranding {
+    padding-left: 100px;
+  }
+ 
   .textFrase{
     padding-right: 4%;
   }
 }
 
 @media (max-width: 1024px) {
-  .enlace {
-    padding-left: 20px;
+  .hamburger{
+    display: block;
   }
-  nav ul li a {
-    font-size: 16px;
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  } 
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  } 
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  } 
+
+  .navMenu{
+    position: fixed;
+    left: -100%;
+    top: 140px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #AEDFDE;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
   }
+
+  .navItem{
+    margin: 0;
+    padding: 0;
+  }
+
+  .navLink{
+    padding: 0;
+  }
+
+  .navMenu.active{
+    left: 0 !important;
+  }
+ 
+  .actives {
+    color: #F15953;
+    background: none;
+  }
+
 
   .index{
     margin-top: 50px;
@@ -345,44 +402,6 @@ main{
 }
 
 @media (max-width: 850px) {
-  .checkbtn {
-    display: block;
-  }
-  nav ul {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #AEDFDE;
-    top: 120px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 100;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-    text-align: center;
-  }
-  nav ul li a {
-    font-size: 20px;
-    color: #000;
-  }
-  nav ul li a:hover {
-    background: none;
-    color: #F15953;
-  }
- 
-  .actives {
-    color: #000;
-    background: none;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-
   .index{
     margin-top: 30px;
   }
