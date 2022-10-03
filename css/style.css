@@ -375,7 +375,8 @@ main{
   }
  
   .actives {
-    color: #F15953;
+    color: #000;
+    background: none;
   }
 
   #check:checked ~ ul {
