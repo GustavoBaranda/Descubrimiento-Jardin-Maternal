@@ -14,7 +14,7 @@
   font-display: auto;
   font-family: BlackboardRestaurant ;
   src: local ('BlackboardRestaurant'),
-   url(../font/BlackboardRestaurant.otf);
+  url(../font/BlackboardRestaurant.otf);
   font-weight: bold;
   font-style: normal;
 }
@@ -448,7 +448,7 @@
       height: 900px;
       top: -210px;
       left: -80px;
-      margin: 25px;
+      margin: 0;
       overflow: hidden;
     }
 
@@ -474,7 +474,7 @@
 
     .bebeNuestroJardin Img{
       margin-top:  -30px;
-      right: 0px;
+      right: 20px;
     }
 
     .slider__btn2{
