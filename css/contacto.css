@@ -173,7 +173,7 @@
   }
   
   .scrollPreguntas{
-    max-height: 760px;
+    height: 760px;
   }
   
   .listasPreguntas{
@@ -310,9 +310,17 @@
     
   @media (max-width: 650px) {
     .contactoContainer{
-        padding: 0;
+       padding-bottom: 400px;
     }
- 
+    
+    .bebeImgContacto{
+      position: relative;
+      top: 100px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   
     .preguntas{
       grid-template-columns: 1fr;

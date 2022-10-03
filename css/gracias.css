@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: Heebo;
+}
+
+@font-face {
+  font-family: BlackboardRestaurant ;
+  src: url(../font/BlackboardRestaurant.otf);
+}
+
+.gracias{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gracias h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: heebo;
+}
+
+.gracias h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: heebo;
+}

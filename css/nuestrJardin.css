@@ -149,6 +149,10 @@
     margin: 25px;
   }
   
+  .bolitas420{
+    display: none;
+  }
+
   .quienesSomos{
     padding: 24px;
     width: 100%;
@@ -231,21 +235,24 @@
     gap: 15px;
   }
   
-  .jornadaSimple, .jornadaCompleta, .jornadaExtendida{
+  .jornadaSimple, 
+  .jornadaCompleta, 
+  .jornadaExtendida{
     margin: 0 auto;
     font-size: 16px;
     font-weight: 400;
     line-height: 29px;
     background: #F1595340;
     border-radius: 50%;
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     padding: 40px 0 0 ;
     text-align: center;
     color: #000
   }
   
-  .jornadaSimple h3, .jornadaCompleta h3{
+  .jornadaSimple h3, 
+  .jornadaCompleta h3{
     text-align: center;
     padding: 20px 0; 
     color: #EB5A54;
@@ -380,10 +387,159 @@
   }
   
   @media (max-width: 650px) {
+    .banderillas{
+      display: none;
+    }
+    .relojContenedor{
+      display: none;
+    }
+ 
+    .bebeNuestroJardin Img{
+      margin-top:  -130px;
+      right: 0px;
+    }
+  }
 
-  }
-  
-  @media (max-width: 420px) {
+  @media (max-width: 520px) {
+    .nuestroJardinTexto{
+      max-width: 420px;
+      max-height: 100%;
+    }
+   
+    .nuestroJardin{
+     width: 99%;   
+    }     
     
+    .bolitasColores img{
+      height: 900px;
+
+      top: -245px;
+      left: -80px;
+      margin: 25px;
+      overflow: hidden;
+    }
   }
   
+  @media (max-width: 440px){
+    .nuestroJardinTexto{
+      margin: 0 2%;
+      max-width: 420px;
+      max-height: 98%;
+    }
+   
+    .nuestroJardin{
+     width: 98%;   
+     margin-bottom: 150px;
+    }     
+    
+    .bolitasColores img{
+      height: 900px;
+      top: -210px;
+      left: -80px;
+      margin: 25px;
+      overflow: hidden;
+    }
+
+    .quienesSomos{
+      height: 1450px;
+    }
+
+    .maps{
+      height: 260px;
+    }
+  
+    .abc{
+      height: 450px;
+    }
+  
+    .colonia{
+      height: 500px;
+    }
+
+    .nuestroJardinCarrucel{
+      padding-top: 100px;
+    }
+
+    .bebeNuestroJardin Img{
+      margin-top:  -30px;
+      right: 0px;
+    }
+
+    .slider__btn2{
+      font-size: 21px;
+      width: 49px;
+      line-height: 49px;
+    }
+  
+    .letf2{
+      top: calc(50% - 28px)
+    }
+    
+    .rigth2{
+      top: calc(50% - 28px);
+    }
+  }
+
+  
+  @media (max-width: 400px) {
+    .bolitasColores img{
+     display: none;
+    }
+
+    .nuestroJardin{
+      margin-bottom: 0px;
+    }
+
+    .quienesSomos{
+      height: 1500px;
+    }
+
+    .maps{
+      height: 260px;
+    }
+  
+    .abc{
+      height: 500px;
+    }
+  
+    .colonia{
+      height: 500px;
+    }
+  }
+
+
+  @media (max-width: 360px) {
+    .nuestroJardinCarrucel{
+      padding-top: 180px;
+    }
+    .bebeNuestroJardin Img{
+      margin-top:  20px;
+      right: 0px;
+    }
+
+    .quienesSomos{
+      height: 1650px;
+    }
+
+    .maps{
+      height: 260px;
+    }
+  
+    .abc{
+      height: 550px;
+    }
+  
+    .colonia{
+      height: 500px;
+    }
+
+    .jornadasTitulo{
+      font-family: BlackboardRestaurant;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 115px;
+      color: #F15953;
+      margin: 50px 0 120px;
+    }
+  }
+

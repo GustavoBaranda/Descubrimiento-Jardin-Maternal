@@ -65,10 +65,11 @@
     flex-wrap: wrap;
     gap: 50px;
     margin: 0;
-    padding: 150px 0;
+    padding: 50px 0 50px;
   }
   
   .card{
+    top: 100px;
     display: flex;
     position: relative;
     width: 300px;
@@ -125,7 +126,7 @@
   }
   
   .back{
-    transform: perspective(300px) rotateY(180deg);
+    transform: perspective(350px) rotateY(180deg);
     background:  #7BBA44;
     padding: 10px;
     color: #000;
@@ -136,9 +137,9 @@
   }
   
   .backRojo{
-    transform: perspective(300px) rotateY(180deg);
+    transform: perspective(350px) rotateY(180deg);
     background: #EB5A54;
-    padding: 10px;
+    padding: 5px;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -147,22 +148,24 @@
   }
   
   .back h3, .backRojo h3{
-    font-size: 24px;
-    line-height: 15px;
-    vertical-align: top;
+    font-size: 18px;
+    line-height: 10px;
   }
   .back h4, .backRojo h4{
     text-align: center;
     font-size: 20px;
-    line-height: 12px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
   }
   
   .back p, .backRojo p{
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
-    padding: 20px 15px 0;
-    line-height: 15px;
+    padding: 3px 27px 0;
+    line-height: 13px;
   }
   
   .card:hover .front, .card:hover .frontRojo {
@@ -171,12 +174,12 @@
   
   .card:hover .back, .card:hover .backRojo{
     transform: perspective(350px) rotateY(360deg);
-    width: 350px;
-    height: 350px;
+    width: 360px;
+    height: 360px;
     z-index: 30;
     padding: 0 15px;
     margin: 0;
-    left: -26px;
+    left: -30px;
   }
   
   .card:hover .cardFront h3{
