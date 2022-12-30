@@ -9,9 +9,14 @@
   scroll-behavior: smooth;
 }
 
+
 @font-face {
+  font-display: auto;
   font-family: BlackboardRestaurant ;
-  src: url(../font/BlackboardRestaurant.otf);
+  src: local ('BlackboardRestaurant'),
+  url(../font/BlackboardRestaurant.otf);
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
@@ -45,7 +50,7 @@ body {
   align-items: center;
   padding: 0;
   width: 100vw;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navMenu{
@@ -57,14 +62,13 @@ body {
 }
 
 .navBranding{
-  padding: 20px 0 20px 100px;
+  padding: 10px 0 10px 100px;
 }
 
 .logo {
   height: 100px;
   cursor: pointer;
 }
-
 
 .navLink {
   transition: 0.7s ease; 
@@ -98,7 +102,6 @@ body {
   transition: all 0.5s ease;
   font-weight: bold;
 }
-
 
 /*BOTON WHATSAPPS*/
 .btn-wsp {
@@ -204,7 +207,7 @@ main{
   justify-content: flex-end;
 }
 
-.textFrase{
+.textphrase{
   text-align: center;
   margin: 20px;
   padding-right: 20%;
@@ -237,11 +240,11 @@ main{
   max-width: 400px;
 }
 
-.footerNavegacion {
+.footerNavigation {
   display:block;
 }
 
-.footerNavegacion ul{
+.footerNavigation ul{
   list-style-type: none;
   margin: 0;
  
@@ -249,12 +252,12 @@ main{
   text-align: center;
 }
 
-.footerNavegacion ul li {
+.footerNavigation ul li {
   width: 100%;
   padding: 0 15px;
 }
 
-.footerNavegacion ul li a {
+.footerNavigation ul li a {
   margin-top: 20px;
   padding: 0;
   list-style: none;
@@ -265,12 +268,12 @@ main{
   opacity: 0.9;
 }
 
-.footerNavegacion ul li a:hover {
+.footerNavigation ul li a:hover {
   color: #F15953;
   opacity: 1;
 }
 
-.nuestrosCanales{
+.OurChannels{
   margin-left: 30px;
   opacity: 0.9;
 }
@@ -280,8 +283,8 @@ main{
   padding-bottom: 20px;
 }
 
-.nuestrosCanales h2,
-.nuestrosCanalesContacto h2{
+.OurChannels h2,
+.OurChannelsContact h2{
   text-align: center;
   margin: 0;
   padding: 15PX 0;
@@ -300,11 +303,11 @@ main{
   padding: 0;
 }
 
-.img-canales{
+.imgChannels{
   width: 30px;
 }
 
-.img-canales:hover{
+.imgChannels:hover{
   width: 35px;
 }
 
@@ -321,12 +324,8 @@ main{
   text-align: center;
 }
 
-.gracias {
-  height: 60vh;
-}
-
 @media (max-width: 1590px) {
-  .textFrase{
+  .textphrase{
     padding-right: 12%;
   }
   
@@ -337,7 +336,7 @@ main{
     padding-left: 8%;
   }
  
-  .textFrase{
+  .textphrase{
     padding-right: 4%;
   }
 }
@@ -362,7 +361,7 @@ main{
   .navMenu{
     position: fixed;
     left: -100%;
-    top: 140px;
+    top: 120px;
     gap: 0;
     flex-direction: column;
     background-color: #AEDFDE;
@@ -376,6 +375,7 @@ main{
   .navItem{
     margin: 0;
     padding: 0;
+    line-height: 50px;
   }
 
   .navLink{
@@ -391,12 +391,11 @@ main{
     background: none;
   }
 
-
   .index{
     margin-top: 50px;
   }
 
-  .footerNavegacion ul li a {
+  .footerNavigation ul li a {
     font-size: 1.2rem;
   }
 }
@@ -406,7 +405,7 @@ main{
     margin-top: 30px;
   }
 
-  .textFrase{
+  .textphrase{
     font-size: 30px;
   }
 
@@ -414,17 +413,17 @@ main{
     display: block;
     padding: 0 15px;
   }
-  .footerNavegacion{
+  .footerNavigation{
     display: block;
     padding: 0 15px;
   }
-  .footerNavegacion ul{
+  .footerNavigation ul{
    text-align: center;   
   }
 }
 
 @media (max-width: 650px) {
-   .textFrase{
+   .textphrase{
     font-size: 25px;
   }
 }

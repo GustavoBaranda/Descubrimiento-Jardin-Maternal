@@ -1,43 +1,43 @@
-const slider2 = document.querySelector('#slider2');
-let sliderSection2 = document.querySelectorAll('.slider__section2');
-let sliderSectionLast2 = sliderSection2[sliderSection2.length - 1];
+const sliderOurGarden = document.querySelector('#sliderOurGarden');
+let sliderSectionOurGarden = document.querySelectorAll('.slider__sectionOurGarden');
+let sliderSectionLastOurGarden = sliderSectionOurGarden[sliderSectionOurGarden.length - 1];
 
-const left2 = document.querySelector('#left2');
-const rigth2 = document.querySelector('#rigth2');
+const leftOurGarden = document.querySelector('#leftOurGarden');
+const rigthOurGarden = document.querySelector('#rigthOurGarden');
 
-slider2.insertAdjacentElement('afterbegin', sliderSectionLast2);
+sliderOurGarden.insertAdjacentElement('afterbegin', sliderSectionLastOurGarden);
 
-function next2() {
-    let sliderSectionFirt2 = document.querySelectorAll('.slider__section2')[0];
-    slider2.style.marginLeft = '-200%';
-    slider2.style.transition = 'all 0.5s ease';
+function nextOurGarden() {
+    let sliderSectionFirtOurGarden = document.querySelectorAll('.slider__sectionOurGarden')[0];
+    sliderOurGarden.style.marginLeft = '-200%';
+    sliderOurGarden.style.transition = 'all 0.5s ease';
     setTimeout(function(){
-        slider2.style.transition = 'none';
-        slider2.insertAdjacentElement('beforeend', sliderSectionFirt2);
-        slider2.style.marginLeft = '-100%';
+        sliderOurGarden.style.transition = 'none';
+        sliderOurGarden.insertAdjacentElement('beforeend', sliderSectionFirtOurGarden);
+        sliderOurGarden.style.marginLeft = '-100%';
     }, 500);
 }
 
-function prev2() {
-    let sliderSection2 = document.querySelectorAll('.slider__section2');
-    let sliderSectionLast2 = sliderSection2[sliderSection2.length - 1];
-    slider2.style.marginLeft = '0%';
-    slider2.style.transition = 'all 0.5s ease';
+function prevOurGarden() {
+    let sliderSectionOurGarden = document.querySelectorAll('.slider__sectionOurGarden');
+    let sliderSectionLastOurGarden = sliderSectionOurGarden[sliderSectionOurGarden.length - 1];
+    sliderOurGarden.style.marginLeft = '0%';
+    sliderOurGarden.style.transition = 'all 0.5s ease';
     setTimeout(function(){
-        slider2.style.transition = 'none';
-        slider2.insertAdjacentElement('afterbegin', sliderSectionLast2);
-        slider2.style.marginLeft = '-100%';
+        sliderOurGarden.style.transition = 'none';
+        sliderOurGarden.insertAdjacentElement('afterbegin', sliderSectionLastOurGarden);
+        sliderOurGarden.style.marginLeft = '-100%';
     }, 500);
 }
 
-rigth2.addEventListener('click', function(){
-    next2();
+rigthOurGarden.addEventListener('click', function(){
+    nextOurGarden();
 });
 
-left2.addEventListener('click', function(){
-    prev2();
+leftOurGarden.addEventListener('click', function(){
+    prevOurGarden();
 });
 
 setInterval(function(){
-    next2();
+    nextOurGarden();
 }, 5000);

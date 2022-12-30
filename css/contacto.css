@@ -16,6 +16,7 @@
 }
 
 .contacto{
+    color: black;
     padding-top: 50px;
     width: 100%;
     margin: 0 auto;
@@ -35,14 +36,16 @@
    .formulario {
     margin: 10% 0;
     max-width: 420px;
-    max-height: 540px;
+    min-height: 540px;
     background: #AEDFDE;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
+    z-index: 40;
   }
   
   .colors {
+    text-align: center
     color: #000;
     font-size: 32px;
     font-family: Heebo;
@@ -50,27 +53,7 @@
     line-height: 47px;
   }
   
-  .form-control {
-    background: #f3f3f3;
-    border-style: none;
-    transition: 0.5s ease-in;
-    outline: none;
-    box-shadow: none;
-    border-radius: 15px;
-    border: 1px solid  #F15953;
-  }
-  
-  .form-control:focus {
-    background: none;
-    outline: none;
-    box-shadow: none;
-  }
-  
-  .form-control::placeholder {
-    color: #000;
-  }
-  
-  .ingresar {
+   .ingresar {
     padding: 10px;
     font-size: 16px;
     font-weight: 700 !important;
@@ -83,7 +66,8 @@
     color: #aedfde;
   }
   
-  .buttons {
+  .buttons{
+    cursor: pointer;
     width: 100%;
     background: #F15953;
     border: none;
@@ -99,7 +83,87 @@
     background: #f3f3f3;
     border-radius: 15px;
   }
+
+  .form-group p{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color:#F15953;
+    font-weight: bold;
+  }
+
+  .input-grp {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .input-grp label {
+    flex: 1;
+  }
+  .input-box {
+    display: flex;
+  }
+  .input-box input,
+  .input-box select {
+    flex: 1;
+    border: none;
+    padding: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .input-box .fas {
+    flex: 0 0 24px;
+    text-align: center;
+    line-height: 24px;  
+    background: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-top: 5px;
+  }
+  .input-box.lineal input {
+    flex: 0 0 24px;
+  }
+  .input-box.lineal .fas {
+    background: transparent;
+  }
+  .input-error {
+    margin: 2px;
+    color: rgb(218, 30, 30);
+  }
+  .fa-check-circle {
+    color: rgb(69, 171, 22);
+  }
+  .fa-times-circle {
+    color: rgb(218, 30, 30);
+  }
+  .submit-grp {
+    text-align: center;
+    padding: 1rem;
+  }
   
+  .with-error input{
+    border: 2px solid rgb(218, 30, 30)!important;
+    border-right: none!important;
+  }
+  .with-error .fas:not(.except) {
+    border: 2px solid rgb(218, 30, 30)!important;
+    border-left: none!important;
+  }
+  
+  .hidden {
+    display: none!important;
+  }
+
+  .successfulDelivery,
+  .errorDelivery{
+    font-size: 18;
+    padding-top: 10px;
+    padding-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #F15953;
+  } 
+
   .contactoBebe{
     position: relative;
   }
@@ -167,20 +231,17 @@
     padding: 30px 0;
     margin: 0 auto;
     width: 90%;
-    max-height: 800px; 
+    /*max-height: 800px;*/ 
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
   
-  .scrollPreguntas{
-    height: 760px;
-  }
+
   
   .listasPreguntas{
     list-style-type:circle;
-    max-height: 760px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /*max-height: 760px;*/
+ 
   }
 
   .listasPreguntas li{
@@ -208,18 +269,31 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 1720px) {
- 
-  
+  .opiniones{
+    display: block;
+  }
+
+  .opiniones div{
+   margin: 0 auto;
+  }
+
+  .opinionesPadres{
+    background: #3b5998;
+    text-align: center;
+  }
+
+  .opinionesPadres h1{
+    color: #fff;
     
   }
-  
+
   @media (max-width: 1590px) {
    
     .bebeImgContacto{
       position: absolute;
       top: 320px;
       left: -165px;
+      z-index: 41;
     }
   
     .bebeImgContacto img{
@@ -233,22 +307,13 @@
       margin: 0;
       display: flex;
       flex-direction: column;
+      gap: 100px;
       width: 100%;
       height: 100%;
       padding-bottom: 500px;
     }
         
-    .formulario {
-      margin: 5% 0;
-      max-width: 420px;
-      max-height: 540px;
-      background: #AEDFDE;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
-    }
-  
-    
+        
    .datosContacto{
     margin: 10% 0;
     max-width: 420px;
@@ -259,32 +324,35 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.57);
   }
   
-    .bebeImgContacto{
-      position: relative;
-      top: 100px;
-      left: 80px;
-    }
-  
-    .contactarte{
-      margin: 0 auto!important; 
-      margin: 0;
-      padding: 0; 
-      max-width: 420px;
-      margin-top: 50px;
-      max-height: 540px;
-    }
-  
-    .contactanos{
-      margin: 0 auto!important;   
-      margin: 0;
-      padding: 0; 
-      max-width: 420px;
-      margin-bottom: 50px;
-      max-height: 540px;
-    }
+  .contactoBebe{
+    margin-top: 30px;
+  }
+
+  .bebeImgContacto{
+    position: relative;
+    top: 90px;
+    left: 80px;
+  }
+
+  .contactarte{
+    margin: 0 auto!important; 
+    margin: 0;
+    padding: 0; 
+    max-width: 420px;
+    margin-top: 50px;
+    max-height: 540px;
+  }
+
+  .contactanos{
+    margin: 0 auto!important;   
+    margin: 0;
+    padding: 0; 
+    max-width: 420px;
+    margin-bottom: 50px;
+    max-height: 540px;
+  }
   
   }
-    
   
   @media (max-width: 1024px) {
      
