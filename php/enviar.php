@@ -25,8 +25,6 @@
     $headers = "MIME-Version: 1.0 \r\n";
     $headers.= "Content-Type: text/html; charset=utf-8 \r\n"; 
     $headers.= "From: $nombre <$correo> \r\n"; 
-    //$headers.= "To: Sitio web <jmdescubriendo@gmail.com> \r\n";
-    
     $respuesta = mail( $destino, "Mensaje desde la web", $body, $headers );
 
     var_dump($respuesta);
