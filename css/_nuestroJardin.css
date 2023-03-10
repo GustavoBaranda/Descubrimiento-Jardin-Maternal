@@ -1,0 +1,498 @@
+/*NUESTRO JARDIN*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: Heebo;
+}
+
+@font-face {
+  font-display: auto;
+  font-family: BlackboardRestaurant ;
+  src: local ('BlackboardRestaurant'),
+  url(../font/BlackboardRestaurant.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.OurGardenSection{
+  padding-top: 160px;
+  width: 100%;
+  bottom: 150px;
+  margin: 55px 0 55px;
+}
+
+.gardenContainer{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.OurGardenContainer{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:  1fr 0.5fr 1fr;
+  gap: 20px;
+  margin: 0 50px;
+}
+
+.OurGardenText{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 35px;
+  max-width: 480px;
+  height: 650px;
+}
+
+.OurGarden{
+  text-align: center;
+  top: 100px;
+  bottom: 150px;
+  margin: 110px 50px 0;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.OurGardenCarrousel{
+  margin: 0 auto;
+  max-width: 480px;
+  max-height: 650px;
+  padding-bottom: 100px;  
+}
+
+.container-sliderOurGarden{
+  width: 90%;
+  max-width: 480px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #000;
+  position: relative;   
+  border-radius: 50px; 
+}
+
+.sliderOurGarden{
+  display: flex;
+  width: 400%;
+  max-height: 650px;
+}
+
+.slider__sectionOurGarden{
+  width: 100%;
+  text-align: center;
+}
+
+.slider__imgOurGarden{
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit:contain
+}
+
+.slider__btnOurGarden{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  width: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+  background-color: #AEDFDE;
+  opacity: 0.8;
+}
+
+.slider__btnOurGarden:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  color: #fff;
+  opacity: 1;
+}
+
+.letfOurGarden{
+  left: 1%;
+  top: calc(50% - 40px)
+}
+
+.rigthOurGarden{
+  right: 1%;
+  top: calc(50% - 40px);
+}
+
+.bebeOurGarden{
+  position: relative;
+}
+
+.bebeOurGarden Img{
+  margin: 0 auto;
+  margin-top:  485px;
+  position: absolute;
+  right: -100px;
+  z-index: 10;
+}
+
+.littleBalls{
+  position: relative;
+}
+
+.littleBallsColors img{
+  height: 700px;
+  position: absolute;
+  top: -60px;
+  left: -110px;
+  margin: 25px;
+}
+
+.littleBalls420{
+  display: none;
+}
+
+.aboutUs{
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  background-color: #AEDFDE;
+  margin: 20px 0 20px 0;
+}
+
+.aboutUsTitle{
+  font-family: BlackboardRestaurant;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  margin: 36px;
+  text-align: center;
+}
+
+.aboutUsText{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.aboutUsContainer{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr ;
+  height: 100%;
+}
+
+.icons{  
+  height: 100%;
+}
+
+.icons img{
+  display: block;
+  margin: 0 auto;
+  width: 135px;
+  height: 145px;
+}
+
+.icons h2{
+  margin: 0;
+}
+
+.icons p{
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.journeys{
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  color: #F15953;
+  padding-bottom: 50px;
+}
+
+.banderillas{
+  position: absolute;
+  right: -2.6%;
+  top: -50px;
+}
+
+.journeysTitle{
+  font-family: BlackboardRestaurant;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  color: #F15953;
+  margin: 50px 0 120px;
+}
+
+.typeJourneys{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.journeysSimple, 
+.journeysCompleta, 
+.journeysExtendida{
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  background: #F1595340;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 40px 0 0 ;
+  text-align: center;
+  color: #000
+}
+
+.journeysSimple h3, 
+.journeysCompleta h3{
+  text-align: center;
+  padding: 20px 0; 
+  color: #EB5A54;
+}
+
+.journeysExtendida h3{
+  text-align: center;
+  padding-top: 20px; 
+  color: #EB5A54;
+}
+
+.relojContainer{
+  position: absolute;
+  right: 1%;
+  top: 370px;
+  text-align: center;
+}
+
+.relojContainer p{
+  text-align: center;
+  display: flex;
+}
+
+.relojContainer img{
+  margin: 0 auto;
+}
+
+.textRelog{
+  border: solid 0 rgba(0, 0, 0, 0.25); 
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  width: 155px;
+  right: 1%;
+  top: 370px;
+}
+
+@media (max-width: 1250px ) {
+  .OurGardenContainer{
+    display: block;
+    align-items: center;
+    justify-content: column;
+    margin: 0;
+  }
+
+  .OurGardenSection{
+    padding-top: 260px;
+  }
+  
+  .OurGardenText{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    max-width: 480px;
+    max-height: 550px;
+  }
+  
+  .OurGarden{
+    text-align: center;
+    margin: 0;    
+  }     
+  
+  .littleBallsColors img{
+    height: 700px;
+    position: absolute;
+    top: -175px;
+    left: -110px;
+    margin: 25px;
+  }
+
+  .bebeOurGarden Img{
+    margin-top:  -130px;
+    right: 0px;
+  }
+
+  .aboutUs{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #AEDFDE;
+    margin: 20px 0 20px 0;
+  }
+
+  .aboutUsContainer{
+    display: block;
+    flex-direction: column;
+  }
+  
+  .relojContainer {
+    right: -2%;
+  }
+
+  .relojContainer img{
+    width: 90px;
+  }
+}  
+
+@media (max-width: 1024px) {
+  .journeys img{  
+    width: 270px;  
+  }
+  
+  .journeysTitle{
+  margin: 50px 0 50px;
+  }
+
+  .banderillas{
+    position: absolute;
+    right: -2.6%;
+    top: -50px;
+  }
+
+  .relojContainer img{
+    width: 90px;
+  }
+
+  .typeJourneys{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 30px;
+  }   
+}
+
+@media (max-width: 650px) {
+  .banderillas{
+    display: none;
+  }
+  .relojContainer{
+    display: none;
+  }
+
+  .bebeOurGarden Img{
+    margin-top:  -130px;
+    right: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .OurGardenText{
+    max-width: 420px;
+    max-height: 100%;
+  }
+  
+  .OurGarden{
+    width: 99%;   
+  }     
+  
+  .littleBallsColors img{
+    height: 900px;
+    top: -245px;
+    left: -80px;
+    margin: 25px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 440px){
+  .OurGardenSection{
+    padding-top: 300px;
+  }
+  
+  .OurGardenText{
+    margin: 0 2%;
+    max-width: 420px;
+    max-height: 98%;
+  }
+  
+  .OurGarden{
+    width: 98%;   
+    margin-bottom: 150px;
+  }     
+  
+  .littleBallsColors img{
+    height: 900px;
+    top: -210px;
+    left: -80px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .OurGardenCarrousel{
+    padding-top: 100px;
+  }
+
+  .bebeOurGarden Img{
+    margin-top:  -30px;
+    right: 20px;
+  }
+
+  .slider__btnOurGarden{
+    font-size: 21px;
+    width: 49px;
+    line-height: 49px;
+  }
+
+  .letfOurGarden{
+    top: calc(50% - 28px)
+  }
+  
+  .rigthOurGarden{
+    top: calc(50% - 28px);
+  }
+}
+
+
+@media (max-width: 400px) {
+  .OurGardenSection{
+    padding-top: 160px;
+  }
+  
+  .littleBallsColors img{
+    display: none;
+  }
+
+  .OurGarden{
+    margin-bottom: 0px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .OurGardenCarrousel{
+    padding-top: 180px;
+  }
+  .bebeOurGarden Img{
+    margin-top:  20px;
+    right: 0px;
+  }
+
+  .journeysTitle{
+    font-family: BlackboardRestaurant;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 115px;
+    color: #F15953;
+    margin: 50px 0 120px;
+  }
+}
